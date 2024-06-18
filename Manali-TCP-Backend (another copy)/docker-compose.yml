@@ -1,0 +1,33 @@
+version: '3'
+services:
+  # mongo service
+  mongo:
+    container_name: mongo-db
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - bridges_datavol:/data
+
+  # redis service
+  redis:
+    container_name: con_redis
+    ports:
+      - 6378:6379
+    image: redis
+    volumes:
+      - bridges_datavol:/var/lib/redis
+
+  #backend service
+  backend-service:
+    container_name: Manali-TCP
+    network_mode: 'host'
+    build:
+      context: .
+    restart: always
+    ports:
+      - 7001:7001
+
+volumes:
+  bridges_datavol:

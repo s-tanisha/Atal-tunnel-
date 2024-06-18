@@ -1,0 +1,33 @@
+.social{
+    width: 30px;
+    /* display: flex;
+    justify-content: space-between; */
+    /* margin-top: 5px; */
+}
+
+.social_each{
+    padding: 12px;
+    color: white;
+    font-size: larger;
+}
+
+.gbutton{
+    font-size: medium;
+}
+
+#link{
+    color:white;
+}
+
+#homeData{
+    width:500px;
+}
+
+#weather{
+    /* background-color:black; */
+    height:100px;
+    width:100px;
+    position: absolute;
+    top: 110px;
+    right: 174px;
+}

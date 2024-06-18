@@ -1,0 +1,35 @@
+
+#heading_weather{
+    padding-left:43px;
+    width:180px;
+    color:white;
+    font-weight:600;
+}
+.search_weather{
+    display:flex;
+    
+}
+
+.search_butn{
+    height:30px;
+    width:90px;
+    background-color:white;
+    border:2px solid black;
+}
+
+.input_weather{
+    width:150px;
+    border:2px solid black;
+}
+
+#weather_det1{
+    margin-top:30px;
+    margin-left:15px;
+    display:flex;
+    width:170px;
+    justify-content:space-between;
+}
+
+#w{
+    color:white;
+}
